@@ -2,8 +2,8 @@ const { BrowserWindow } = require("electron");
 
 function createWindow() {
     const win = new BrowserWindow({
-        height: 270,
-        width: 210,
+        height: 310,
+        width: 250,
         frame: false,
         resizable: false,
         transparent: true,
