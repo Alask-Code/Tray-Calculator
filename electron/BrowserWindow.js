@@ -17,7 +17,7 @@ function createWindow() {
     })
     win.removeMenu()
     win.loadFile('index.html')
-
+    win.hide()
     return win
 }
 
