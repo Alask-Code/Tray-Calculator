@@ -1,13 +1,13 @@
 require('electron-reload')(__dirname)
 const { app } = require('electron')
-const controlWindow = require('./electron/ControlWindow')
+const ControlWindow = require('./electron/ControlWindow')
 
 
 
 
 function App() {
     function setOnPosition() {
-        const { getPosition } = controlWindow(win, tray)
+        const { getPosition } = ControlWindow(win, tray)
         const { x, y } = getPosition()
         win.setPosition(x, y, false)
     }
@@ -18,7 +18,7 @@ function App() {
 
     setOnPosition()
 
-    const { toggle } = controlWindow(win, tray)
+    const { toggle } = ControlWindow(win, tray)
     tray.on('click', toggle)
 
 }
