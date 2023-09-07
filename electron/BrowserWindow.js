@@ -7,7 +7,7 @@ function createWindow() {
         frame: false,
         resizable: false,
         transparent: true,
-        alwaysOnTop: true, //REMOVE BEFORE MERGE "ui-design"
+        alwaysOnTop: true, //MUST REMOVE
         fullscreenable: false,
         skipTaskbar: true,
         webPreferences: {
@@ -18,7 +18,7 @@ function createWindow() {
     })
     win.removeMenu()
     win.loadFile('index.html')
-    win.hide() //REMOVE BEFORE MERGE "ui-design"
+    win.hide() //MUST REMOVE
     return win
 }
 
