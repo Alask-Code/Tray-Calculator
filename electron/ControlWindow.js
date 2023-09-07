@@ -16,8 +16,8 @@ function ControlWindow(win, tray) {
     function getPosition() {
         const winBounds = win.getBounds()
         const trayBounds = tray.getBounds()
-        const x = Math.round(trayBounds.x + (trayBounds.width / 2) - (winBounds.width / 2)) - 1
-        const y = Math.round(trayBounds.y + trayBounds.height + 3) + 1
+        const x = Math.round(trayBounds.x + (trayBounds.width / 2) - (winBounds.width / 2)) - 0
+        const y = Math.round(trayBounds.y + trayBounds.height)
         return { x, y }
     }
     return {

@@ -4,6 +4,7 @@
     border: none;
     outline: none;
     user-select: none;
+    transition-duration: 1s;
     box-sizing: border-box;
 }
 
@@ -14,7 +15,7 @@ body {
 }
 
 body {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
