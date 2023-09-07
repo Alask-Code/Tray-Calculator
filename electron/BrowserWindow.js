@@ -2,11 +2,12 @@ const { BrowserWindow } = require("electron");
 
 function createWindow() {
     const win = new BrowserWindow({
-        height: 270,
-        width: 210,
+        height: 310,
+        width: 250,
         frame: false,
         resizable: false,
         transparent: true,
+        alwaysOnTop: true, //REMOVE BEFORE MERGE "ui-design"
         fullscreenable: false,
         skipTaskbar: true,
         webPreferences: {
@@ -17,7 +18,7 @@ function createWindow() {
     })
     win.removeMenu()
     win.loadFile('index.html')
-
+    win.hide() //REMOVE BEFORE MERGE "ui-design"
     return win
 }
 

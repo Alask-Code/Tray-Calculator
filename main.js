@@ -20,7 +20,6 @@ function App() {
 
     const { toggle } = ControlWindow(win, tray)
     tray.on('click', toggle)
-
 }
 
 app.whenReady().then(() => {
