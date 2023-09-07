@@ -1,3 +1,4 @@
+require('electron-reload')(__dirname)
 const { app } = require('electron')
 
 function App() {
