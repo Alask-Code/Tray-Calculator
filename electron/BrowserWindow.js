@@ -2,8 +2,13 @@ const { BrowserWindow } = require("electron");
 
 function createWindow() {
     const win = new BrowserWindow({
-        height: 600,
-        width: 800,
+        height: 270,
+        width: 210,
+        frame: false,
+        resizable: false,
+        transparent: true,
+        fullscreenable: false,
+        skipTaskbar: true,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -12,7 +17,6 @@ function createWindow() {
     })
     win.removeMenu()
     win.loadFile('index.html')
-    win.openDevTools()
 
     return win
 }
