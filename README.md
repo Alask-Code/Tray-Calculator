@@ -8,4 +8,4 @@ A Simple Calculator written in Electron that runs in background and can be acess
 3. Execute the installer and wait until completition;
 4. Run in start menu;
 
-# ! APP MUST NOT WORK AT THIS MOMENT!
+# ! APP MUST NOT WORK AT THIS MOMENT !
