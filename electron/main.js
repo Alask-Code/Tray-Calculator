@@ -1,7 +1,7 @@
 require('electron-reload')(__dirname)
 const { app } = require('electron')
-const ControlWindow = require('./electron/ControlWindow')
-const AutoUpdater = require('./electron/AutoUpdater')
+const ControlWindow = require('./ControlWindow')
+const AutoUpdater = require('./AutoUpdater')
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
         const { x, y } = getPosition()
         win.setPosition(x, y, false)
     }
-    const win = require('./electron/BrowserWindow')
-    const tray = require('./electron/Tray')
+    const win = require('./BrowserWindow')
+    const tray = require('./Tray')
     setOnPosition()
 
     const { toggle } = ControlWindow(win, tray)
@@ -21,5 +21,4 @@ function App() {
 app.whenReady().then(() => {
     App()
     AutoUpdater()
-
 })

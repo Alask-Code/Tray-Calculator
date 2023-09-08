@@ -1,4 +1,4 @@
-const { BrowserWindow } = require("electron");
+const { BrowserWindow } = require("electron")
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -8,7 +8,7 @@ function createWindow() {
         resizable: false,
         transparent: true,
         fullscreenable: false,
-        skipTaskbar: true,
+        // skipTaskbar: true,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -16,6 +16,7 @@ function createWindow() {
         }
     })
     win.removeMenu()
+    win.openDevTools()
     win.loadFile('index.html')
     win.hide()
 
