@@ -12,6 +12,9 @@ function App() {
     setOnPosition()
     const { toggle } = ControlWindow(win, tray)
     tray.on('click', toggle)
+    win.addListener('blur', () => {
+        toggle()
+    })
 }
 app.whenReady().then(() => {
     App()

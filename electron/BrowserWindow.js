@@ -20,6 +20,7 @@ function createWindow() {
     })
     win.hide()
     win.removeMenu()
+    // win.openDevTools()
     win.loadFile('index.html')
     win.setTitle('Tray Calc+')
     return win
