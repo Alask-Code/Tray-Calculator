@@ -1,7 +1,8 @@
 require('electron-reload')(__dirname)
 const { app } = require('electron')
 const ControlWindow = require('./electron/ControlWindow')
-const { autoUpdater } = require("electron-updater")
+const AutoUpdater = require('./electron/AutoUpdater')
+
 
 function App() {
     function setOnPosition() {
@@ -18,8 +19,7 @@ function App() {
 }
 
 app.whenReady().then(() => {
-    autoUpdater.checkForUpdatesAndNotify().then(() => {
-        autoUpdater.quitAndInstall()
-    })
     App()
+    AutoUpdater()
+
 })

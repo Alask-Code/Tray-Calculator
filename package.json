@@ -1,14 +1,17 @@
 {
-  "name": "tray-calculator",
-  "version": "v0.0.1",
-  "description": "Simple Calculator that runs in tray shortcuts.",
+  "keywords": [],
   "main": "main.js",
+  "name": "tray-calc",
+  "version": "v0.0.2",
+  "author": "Alask Code",
+  "license": "LGPL-3.0-only",
+  "description": "Simple Calculator that runs in tray shortcuts.",
+  "repository": "https://github.com/Alask-code/Tray-Calculator",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder -p never",
+    "pre-build": "electron-builder -p never",
     "release": "electron-builder -p always"
   },
-  "repository": "https://github.com/Alask-code/Tray-Calculator",
   "build": {
     "extraFiles": [
       "README.md",
@@ -25,9 +28,6 @@
       }
     }
   },
-  "keywords": [],
-  "author": "",
-  "license": "LGPL-3.0-only",
   "devDependencies": {
     "electron": "^26.2.0",
     "electron-builder": "^24.6.4"
