@@ -4,13 +4,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build -w -p=always"
   },
   "keywords": [],
   "author": "",
   "license": "LGPL-3.0-only",
   "devDependencies": {
-    "electron": "^26.2.0"
+    "electron": "^26.2.0",
+    "electron-builder": "^24.6.4"
   },
   "dependencies": {
     "electron-reload": "^2.0.0-alpha.1"
