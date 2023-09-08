@@ -5,7 +5,12 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build -w -p=always"
+    "build": "electron-builder build",
+    "release": "electron-builder"
+  },
+  "repository": "https://github.com/Alask-code/Tray-Calculator",
+  "build": {
+    "nsis": {}
   },
   "keywords": [],
   "author": "",
