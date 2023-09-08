@@ -1,6 +1,6 @@
 const { resolve } = require('path')
 const { BrowserWindow } = require("electron")
-const icon = resolve(__dirname, '../', 'assets', 'appIcon.jpg')
+const icon = resolve(__dirname, '../', 'assets', 'appIcon.png')
 
 function createWindow() {
     const win = new BrowserWindow({

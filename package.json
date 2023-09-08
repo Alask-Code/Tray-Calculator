@@ -13,12 +13,18 @@
     "release": "electron-builder -p always"
   },
   "build": {
+    "appId": "com.alaskcode.traycalc",
+    "productName": "Tray Calc+",
     "extraFiles": [
       "README.md",
       "NOTICE.md",
       "LICENSE.md"
     ],
+    "directories": {
+      "buildResources": "assets"
+    },
     "nsis": {
+      "icon": "assets/appIcon.png",
       "oneClick": false,
       "publish": {
         "provider": "github",

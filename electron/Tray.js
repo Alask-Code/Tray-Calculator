@@ -1,6 +1,6 @@
 const { Tray } = require('electron')
 const { resolve } = require('path')
-const icon = resolve(__dirname, '../', 'assets', 'appIcon.jpg')
+const icon = resolve(__dirname, '../', 'assets', 'appIcon.png')
 
 function createTray() {
     const tray = new Tray(icon)
