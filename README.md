@@ -1,11 +1,18 @@
-# Tray Calculator
+# Tray Calc+
+Uma Calculadora Simples que roda na sua barra de tarefas!
 
-A Simple Calculator written in Electron that runs in background and can be acessed by windows tray shortcuts.
+## Instruções de instalação:
+1. Baixe a versão mais recente na aba "Releases".
 
-## Instalation Instructions:
-1. Download latest release from Releases tab;
-2. Windows may tell the software is insecure because it is in a early early stage;
-3. Execute the installer and wait until completition;
-4. Run in start menu;
+2. Caso seu navegador bloqueie o download, é devido a falta de uma chave de assinatura de codigo, não presente no momento por ser um projeto
+sem custos, portanto voce deve manter mesmo assim para continuar a instalação.
 
-# ! APP MUST NOT WORK AT THIS MOMENT !
+3. Execute o instalador, e novamente o Windows SmarScreen pode bloquear a instalação, clique em "Mais Informações" e depois em "Executar assim mesmo"
+ 
+4. #### Caso os problemas de segurança causem um desconforto, me esforcei em fazer um código facil de se entender, e você mesmo pode analisar se há a existencia de algum código malicioso.
+
+5. O instalador vem pré configurado como instalador de clique unico, ou seja, assim que voce iniciar o instalador ele ira instalar tudo automaticamente, e após ira iniciar a aplicação
+
+### O aplicativo é instalado por padrão na pasta: 
+
+```C:\Users\SEU_USUARIO\AppData\Local\Programs\tray-calc```
