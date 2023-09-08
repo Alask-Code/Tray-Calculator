@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background: #B191FF;
+  background: #4800ff;
 }
 
 .app * {

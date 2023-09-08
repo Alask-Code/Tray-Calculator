@@ -1,6 +1,6 @@
 {
   "name": "tray-calculator",
-  "version": "v0.0.1-beta-3",
+  "version": "v0.0.2",
   "description": "Simple Calculator that runs in tray shortcuts.",
   "main": "main.js",
   "scripts": {
@@ -18,7 +18,9 @@
     "nsis": {
       "oneClick": false,
       "publish": {
-        "provider": "github"
+        "provider": "github",
+        "owner": "Alask-code",
+        "repo": "Tray-Calculator"
       }
     }
   },
