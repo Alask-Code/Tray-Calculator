@@ -19,6 +19,7 @@ function createWindow() {
     win.removeMenu()
     win.loadFile('index.html')
     win.hide() //MUST REMOVE
+    win.openDevTools()
     return win
 }
 
