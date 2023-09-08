@@ -1,4 +1,3 @@
-
 function ControlWindow(win, tray) {
     function toggle() {
         if (win.isVisible()) {

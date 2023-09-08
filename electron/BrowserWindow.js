@@ -22,8 +22,6 @@ function createWindow() {
     win.removeMenu()
     win.loadFile('index.html')
     win.setTitle('Tray Calc+')
-
     return win
 }
-
 module.exports = createWindow()
