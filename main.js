@@ -3,7 +3,7 @@ const { app } = require('electron')
 const ControlWindow = require('./electron/ControlWindow')
 
 const { autoUpdater } = require("electron-updater")
-autoUpdater.checkForUpdatesAndNotify()
+
 
 
 function App() {
@@ -24,5 +24,6 @@ function App() {
 }
 
 app.whenReady().then(() => {
+    autoUpdater.checkForUpdatesAndNotify()
     App()
 })
