@@ -1,8 +1,8 @@
 {
   "keywords": [],
   "name": "tray-calc",
-  "version": "v0.0.1-alpha",
-  "author": "Alask Code",
+  "version": "v0.0.1-pre-release",
+  "author": "Alask-code",
   "license": "LGPL-3.0-only",
   "main": "electron/main.js",
   "description": "Simple Calculator that runs in tray shortcut.",
@@ -20,12 +20,8 @@
       "NOTICE.md",
       "LICENSE.md"
     ],
-    "directories": {
-      "buildResources": "assets"
-    },
     "nsis": {
-      "icon": "assets/appIcon.png",
-      "oneClick": false,
+      "oneClick": true,
       "publish": {
         "provider": "github",
         "owner": "Alask-code",

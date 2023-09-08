@@ -10,7 +10,7 @@ function createWindow() {
         frame: false,
         resizable: false,
         transparent: true,
-        // skipTaskbar: true,
+        skipTaskbar: true,
         fullscreenable: false,
         webPreferences: {
             nodeIntegration: true,
@@ -20,7 +20,6 @@ function createWindow() {
     })
     win.hide()
     win.removeMenu()
-    win.openDevTools()
     win.loadFile('index.html')
     win.setTitle('Tray Calc+')
 
