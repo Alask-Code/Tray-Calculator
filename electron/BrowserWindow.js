@@ -7,7 +7,6 @@ function createWindow() {
         frame: false,
         resizable: false,
         transparent: true,
-        alwaysOnTop: true, //MUST REMOVE
         fullscreenable: false,
         skipTaskbar: true,
         webPreferences: {
@@ -18,8 +17,8 @@ function createWindow() {
     })
     win.removeMenu()
     win.loadFile('index.html')
-    win.hide() //MUST REMOVE
-    win.openDevTools()
+    win.hide()
+
     return win
 }
 
