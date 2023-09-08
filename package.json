@@ -1,6 +1,6 @@
 {
   "name": "tray-calculator",
-  "version": "v0.0.1-beta-1",
+  "version": "v0.0.1-beta-2",
   "description": "Simple Calculator that runs in tray shortcuts.",
   "main": "main.js",
   "scripts": {
