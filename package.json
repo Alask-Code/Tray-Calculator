@@ -2,7 +2,7 @@
   "keywords": [],
   "main": "main.js",
   "name": "tray-calc",
-  "version": "v0.0.2",
+  "version": "v0.0.1-pre",
   "author": "Alask Code",
   "license": "LGPL-3.0-only",
   "description": "Simple Calculator that runs in tray shortcuts.",
