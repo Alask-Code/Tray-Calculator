@@ -10,13 +10,13 @@
   },
   "repository": "https://github.com/Alask-code/Tray-Calculator",
   "build": {
-    "asar": false,
     "extraFiles": [
       "README.md",
       "NOTICE.md",
       "LICENSE.md"
     ],
     "nsis": {
+      "oneClick": false,
       "publish": {
         "provider": "github"
       }
@@ -30,6 +30,7 @@
     "electron-builder": "^24.6.4"
   },
   "dependencies": {
-    "electron-reload": "^2.0.0-alpha.1"
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-updater": "^6.1.4"
   }
 }

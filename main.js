@@ -2,7 +2,8 @@ require('electron-reload')(__dirname)
 const { app } = require('electron')
 const ControlWindow = require('./electron/ControlWindow')
 
-
+const { autoUpdater } = require("electron-updater")
+autoUpdater.checkForUpdatesAndNotify()
 
 
 function App() {
