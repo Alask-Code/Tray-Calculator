@@ -5,7 +5,7 @@
   "author": "Alask Code",
   "license": "LGPL-3.0-only",
   "main": "electron/main.js",
-  "description": "Simple Calculator that runs in tray shortcuts.",
+  "description": "Simple Calculator that runs in tray shortcut.",
   "repository": "https://github.com/Alask-code/Tray-Calculator",
   "scripts": {
     "start": "electron .",

@@ -18,11 +18,11 @@ function createWindow() {
             enableRemoteModule: true
         }
     })
-    win.setTitle('Tray Calc+')
+    win.hide()
     win.removeMenu()
     win.openDevTools()
     win.loadFile('index.html')
-    win.hide()
+    win.setTitle('Tray Calc+')
 
     return win
 }
