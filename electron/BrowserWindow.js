@@ -9,7 +9,7 @@ function createWindow() {
         frame: false,
         resizable: false,
         transparent: true,
-        skipTaskbar: false,
+        skipTaskbar: true,
         alwaysOnTop: true,
         fullscreenable: false,
         webPreferences: {
@@ -22,7 +22,6 @@ function createWindow() {
     win.removeMenu()
     win.loadFile('index.html')
     win.setTitle('Tray Calc+')
-    win.openDevTools({ mode: 'detach' })
     return win
 }
 module.exports = createWindow()
