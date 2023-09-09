@@ -12,9 +12,11 @@ function App() {
     const tray = require('./Tray')
     setOnPosition()
     const { toggle } = ControlWindow(win, tray)
-
     tray.on('click', () => {
         toggle()
+    })
+    tray.on('right-click', () => {
+        app.quit()
     })
 }
 app.whenReady().then(() => {

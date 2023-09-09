@@ -12,19 +12,18 @@
   backdrop-filter: blur(10px);
 }
 
-input {
+.input {
+  @include flex(end, center, row);
   height: 25%;
   width: 100%;
+  overflow: hidden;
   padding: 10px;
   font-size: 2rem;
-  text-align: right;
+  text-align: end;
   border-radius: 10px;
   transition-duration: 0s;
   background: $cambridge-blue;
-
-  &:focus {
-    border: 2px solid $dark-slate-gray;
-  }
+  border: 2px solid $dark-slate-gray;
 }
 
 .buttons {
