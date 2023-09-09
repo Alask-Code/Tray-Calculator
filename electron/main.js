@@ -11,9 +11,12 @@ function App() {
     const tray = require('./Tray')
     setOnPosition()
     const { toggle } = ControlWindow(win, tray)
-    tray.on('click', toggle)
-    win.addListener('blur', win.hide)
+
+    tray.on('click', () => {
+        toggle()
+    })
 }
 app.whenReady().then(() => {
     App()
+
 })

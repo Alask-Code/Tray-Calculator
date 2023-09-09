@@ -11,6 +11,7 @@ function createWindow() {
         resizable: false,
         transparent: true,
         skipTaskbar: true,
+        alwaysOnTop: true,
         fullscreenable: false,
         webPreferences: {
             nodeIntegration: true,

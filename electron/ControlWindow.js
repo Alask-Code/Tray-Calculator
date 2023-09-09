@@ -1,17 +1,21 @@
 function ControlWindow(win, tray) {
+
     function toggle() {
         if (win.isVisible()) {
             win.hide()
+
         } else {
-            show()
+            showWindow()
+
         }
+
     }
-    function show() {
+    function showWindow() {
         const { x, y } = getPosition()
         win.setPosition(x, y, false)
         win.show()
-        win.focus()
     }
+
     function getPosition() {
         const winBounds = win.getBounds()
         const trayBounds = tray.getBounds()
