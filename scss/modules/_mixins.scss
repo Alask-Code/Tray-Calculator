@@ -4,3 +4,8 @@
     align-items: $align;
     flex-direction: $direction;
 }
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}

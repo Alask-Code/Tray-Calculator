@@ -2,14 +2,12 @@
 @import 'mixins';
 
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    user-select: none;
-    font-size: 0.75rem;
     box-sizing: border-box;
-    transition-duration: 1s;
+    font-size: 0.85rem;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 html,
@@ -21,4 +19,8 @@ body {
 body {
     @include flex(center, center, column);
     padding: 5px;
+}
+
+button {
+    cursor: pointer;
 }
