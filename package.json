@@ -2,7 +2,7 @@
   "keywords": [],
   "name": "tray-calc",
   "author": "Alask-code",
-  "license": "LGPL-3.0-only",
+  "license": "LGPL-3.0-or-later",
   "main": "electron/main.js",
   "version": "v1.0.0",
   "description": "Simple Calculator that runs in tray shortcut.",
