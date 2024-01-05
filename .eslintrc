@@ -1,0 +1,4 @@
+{
+  "extends": "@electron-internal",
+  "rules": { "no-eval": "off" }
+}

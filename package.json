@@ -32,5 +32,10 @@
     "electron": "^26.2.0",
     "electron-builder": "^24.6.4",
     "electron-reload": "^2.0.0-alpha.1"
+  },
+  "dependencies": {
+    "@electron-internal/eslint-config": "^1.0.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-node": "^11.1.0"
   }
 }
