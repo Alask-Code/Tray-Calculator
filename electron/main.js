@@ -1,5 +1,7 @@
-const { resolve } = require('path')
-require('electron-reload')(resolve(__dirname, '../'))
+try {
+    require('electron-reload')('../')
+} catch (error) {}
+
 const { app } = require('electron')
 const ControlWindow = require('./ControlWindow')
 function App() {
